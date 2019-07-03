@@ -7,4 +7,4 @@ https://egbie.pythonanywhere.com/
 
 Tip
 
-Because I am hosting my site on PythonAnywhere the free version sometimes their server shift or turns off I don't know which one but this throws the database out of alignment which throws a cannot connection error. If this happens refresh the page and it should loaded again. 
+Because I am hosting my site on PythonAnywhere the free version sometimes are turns off. If this happens refresh the page and it should loaded again. 
