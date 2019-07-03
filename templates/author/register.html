@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %} Author Registration {% endblock %}
+
+{% block content %}
+    <div class="row">
+
+        <div class="offset-md-3 col-md-6">
+
+            <div class="heading">
+                <h1>Registration</h1>
+                <br>
+            </div>
+            {% from "__formhelpers.html" import render_field %}
+
+            <form method="POST" action="{{ url_for('.register') }}" role="form">
+
+                {{ form.hidden_tag() }}
+                {{ render_field(form.full_name, class="form-control") }}
+                {{ render_field(form.email, class="form-control") }}
+                {{ render_field(form.password, class="form-control") }}
+                {{ render_field(form.confirm, class="form-control") }}
+
+                <div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+{% endblock %}

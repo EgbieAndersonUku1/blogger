@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %} Login Page {% endblock %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            {% include "__flash_messages.html" %}
+            <h1>Login Form</h1>
+
+            {% from "__formhelpers.html" import render_field %}
+
+            <form method="POST" action="{{ url_for('.login') }}" role="form">
+
+                {{ form.hidden_tag() }}
+                {{ render_field(form.email, class="form-control") }}
+                {{ render_field(form.password, class="form-control") }}
+
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

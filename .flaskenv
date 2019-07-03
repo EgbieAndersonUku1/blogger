@@ -1,0 +1,10 @@
+FLASK_APP='run.py'
+FLASK_ENV=development
+SECRET_KEY=some-secret-key
+DB_USERNAME=database-username-here
+DB_PASSWORD=database-password-here
+DB_HOST=place-your-host-from
+DATABASE_NAME=database-name-here
+MYSQL_ROOT_PASSWORD='password-for-mysql-server'
+BLOG_NAME='The blog name here'
+BLOG_POST_IMAGES_PATH="/some/path/to/the/static/images/uploads"
